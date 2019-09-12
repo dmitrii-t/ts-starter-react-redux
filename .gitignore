@@ -1,0 +1,22 @@
+# NodeJS ignoreds
+*.js
+*.d.ts
+node_modules
+dist/
+
+# Intellij ignoreds
+.idea/
+*.iml
+
+# VSCode
+.vscode
+
+# AWS SDK
+cdk.out/
+
+# Locals
+.env
+
+# Ignore TODO file
+TODO
+
