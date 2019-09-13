@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { IUserDTO } from '../../shared/IUser';
+import { IUser } from '../model/IUser';
 
 export function loadUsersAPI() {
-  return axios.get(`/api/users`).then(res => res.data as IUserDTO[]);
+  return axios.get(`/api/users`).then(res => res.data as IUser[]);
 }

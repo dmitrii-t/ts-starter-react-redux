@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import { createShallow } from '@material-ui/core/test-utils';
 import * as React from 'react';
 import { User } from './User';
-import { IUser } from '../model/IUserDTO';
+import { IUser } from '../model/IUser';
 
 describe('<User/>', () => {
   const user: IUser = {
