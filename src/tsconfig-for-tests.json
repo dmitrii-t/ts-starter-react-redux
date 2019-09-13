@@ -3,9 +3,15 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "lib": ["es6", "dom"],
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "jsx": "react",
-    "types": ["node", "jest"],
+    "types": [
+      "node",
+      "jest"
+    ],
     "noEmit": true
   }
 }
