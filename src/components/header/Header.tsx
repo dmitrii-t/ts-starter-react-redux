@@ -5,17 +5,17 @@ import * as React from 'react';
 import {Link} from 'react-router-dom';
 
 export const Header: React.FunctionComponent = () => (
-  <AppBar position='static' color='default'>
-    <Toolbar>
-      <Button color='primary' component={(p: any) => <Link to='/' {...p} />}>
-        Home
-      </Button>
-      <Button
-        color='primary'
-        component={(p: any) => <Link to='/users-list' {...p} />}
-      >
-        Example Users List
-      </Button>
-    </Toolbar>
-  </AppBar>
+    <AppBar position='static' color='default'>
+        <Toolbar>
+            <Button color='primary' component={(p: any) => <Link to='/' {...p} />}>
+                Home
+            </Button>
+            <Button
+                color='primary'
+                component={(p: any) => <Link to='/users-list' {...p} />}
+            >
+                Example Users List
+            </Button>
+        </Toolbar>
+    </AppBar>
 );
