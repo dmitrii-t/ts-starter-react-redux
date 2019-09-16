@@ -96,6 +96,8 @@ export class DataTable extends React.Component<IProps, IState> {
 
 }
 
+// --  Redux container component goes below --
+
 const mapStateToProps = (state: any) => ({
     rows: state.dataTable.records
 } as IProps)
@@ -105,7 +107,9 @@ const mapDispatchToProps = dispatch => ({
     removeRecord: key => dispatch(DataTableActions.removeRecord(key))
 } as IProps)
 
-export default withStyles(styles)(connect<IState, IProps>(
+const DataTableContainer = withStyles(styles)(connect<IState, IProps>(
     mapStateToProps,
     mapDispatchToProps
 )(DataTable))
+
+export default DataTableContainer
