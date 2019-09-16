@@ -1,6 +1,6 @@
 import axios from 'axios'
-import {IUser} from '../model/IUser'
+import {IRecord} from '../model/IRecord'
 
-export function loadDataTable() {
-    return axios.get(`/api/users`).then(res => res.data as IUser[])
+export function fetchDataTable() {
+    return axios.get(`/api/users`).then(res => res.data as IRecord[])
 }
