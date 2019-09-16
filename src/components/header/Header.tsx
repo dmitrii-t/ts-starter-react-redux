@@ -1,8 +1,8 @@
-import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import Toolbar from '@material-ui/core/Toolbar';
-import * as React from 'react';
-import {Link} from 'react-router-dom';
+import AppBar from '@material-ui/core/AppBar'
+import Button from '@material-ui/core/Button'
+import Toolbar from '@material-ui/core/Toolbar'
+import * as React from 'react'
+import {Link} from 'react-router-dom'
 
 export const Header: React.FunctionComponent = () => (
     <AppBar position='static' color='default'>
@@ -12,10 +12,10 @@ export const Header: React.FunctionComponent = () => (
             </Button>
             <Button
                 color='primary'
-                component={(p: any) => <Link to='/users-list' {...p} />}
+                component={(p: any) => <Link to='/data' {...p} />}
             >
-                Example Users List
+                Data
             </Button>
         </Toolbar>
     </AppBar>
-);
+)

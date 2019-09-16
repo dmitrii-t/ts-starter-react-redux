@@ -1,19 +1,19 @@
-import * as path from 'path';
-import * as webpack from 'webpack';
+import * as path from 'path'
+import * as webpack from 'webpack'
 // @ts-ignore
-import WebpackManifestPlugin from 'webpack-manifest-plugin';
+import WebpackManifestPlugin from 'webpack-manifest-plugin'
 // @ts-ignore
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 // @ts-ignore
-import cssnano from 'cssnano';
+import cssnano from 'cssnano'
 
-// import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+// import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
-const isDevelopment = process.env.NODE_ENV !== 'production';
+const isDevelopment = process.env.NODE_ENV !== 'production'
 const paths = {
     nodeModules: path.resolve(__dirname, 'node_modules'),
     dist: path.resolve(__dirname, 'dist')
-};
+}
 
 const config: webpack.Configuration = {
     mode: isDevelopment ? 'development' : 'production',
@@ -73,8 +73,8 @@ const config: webpack.Configuration = {
             template: 'index.html'
         }),
     ],
-};
+}
 
 export default [
     config
-];
+]
