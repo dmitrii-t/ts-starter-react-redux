@@ -1,4 +1,4 @@
-### The starter using TypeScript, Webpack, React and Rdux 
+### The starter fullstack project created with TypeScript, Webpack, React and Rdux
 
 ```bash
 yarn clean # to remove ./dist directory
